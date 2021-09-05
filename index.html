@@ -54,7 +54,7 @@
         <section class="hero">
             <div class="container hero-container">
             <h1 class="title">Эффективные решения <br> для вашего бизнеса</h1>
-            <button class="center-button" type="button">Заказать услугу</button>
+            <button class="center-button" type="button" data-modal-open>Заказать услугу</button>
             </div>
         </section>
 <!-----------наши преимущества---------->
@@ -122,10 +122,13 @@
             <h2 class="skills-title">Чем мы занимаемся</h2>
             <ul class="skills-list list">
                 <li class="skills-item"><img src="./images/about/about-img-1.jpg" alt="Пишем код" width="370" height="294">
+                    <h3 class="skills-text">Десктопные приложения</h3>
                 </li>
                 <li class="skills-item"><img src="./images/about/about-img-2.jpg" alt="Делаем для телефона" width="370" height="294">
+                    <h3 class="skills-text">Мобильные приложения</h3>
                 </li>
                 <li class="skills-item"><img src="./images/about/about-img-3.jpg" alt="Колористика" width="370" height="294">
+                    <h3 class="skills-text">Дизайнерские решения</h3>
                 </li>
             </ul>
             </div>
@@ -397,6 +400,17 @@
         </div>
         </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="btn-icon" data-modal-close>
+                <svg class="modal-icon" width="11" height="11">
+                    <use href="./images/sprite.svg#icon-vector"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 
 </body>
 
